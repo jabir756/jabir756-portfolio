@@ -1,0 +1,56 @@
+@media (width< 678px) {
+
+    header{
+        height: auto;
+        border-bottom: none;
+    }
+
+    header span{
+        display: flex;
+        height: 60px;
+        align-items: center;
+        color: rgba(0, 0, 255, 0.619);
+        font-size: 2.5rem;
+        margin: 0px 5px;
+        cursor: pointer;
+        width: max-content;        
+    }
+
+    header nav{
+        display: none;
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-show{
+        display: flex;
+    }
+
+    button{
+        width: max-content;
+        font-size: 1.06rem;
+        padding: 5px;
+        margin: 5px 0px;
+        cursor: pointer;
+        position:relative;
+        border: none;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .name,
+    section{
+        margin: 0px 10px;
+    }
+
+    .name{
+        margin-top: 50px;
+    }
+    
+    ul{
+        width: auto;
+    }
+}
