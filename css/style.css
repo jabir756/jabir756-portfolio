@@ -29,7 +29,6 @@ header{
 
 .span-container h3{
     display: flex;
-    align-items: center;
     width: 60%;
     font-size: 1.5rem;
     padding: 5px;
