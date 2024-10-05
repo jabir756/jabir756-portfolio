@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Open Sans', Arial, sans-serif;
+    color: #333;
+    font-size: 1.08rem;
+    background-color: #ffffff;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(40px);
+}
+
+.span-container{
+    display: flex;
+    background-color: #000;
+}
+
+.span-container h3{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #fff;
+}
+
+.span-container span{
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 40%;
+    font-weight: 600;
+}
+
+.nav-container nav,
+.profil-about nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.nav-container nav a,
+.profil-about nav a{
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: rgba(0, 0, 255, 0.509);
+    border-radius: 25px;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-container nav a:hover,
+.profil-about nav a:hover{
+    transform: scale(1.05);
+}
+
+.nav-container{
+    display: none;
+}
+
+.nav-container-show{
+    display: flex;
+}
+
+img{
+    object-fit: contain;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.profil-picture{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.profil-about{
+    padding: 10px;
+    text-align: center;
+}
+
+.profil-about h3,
+.profil-about p{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.skills-list{
+    margin: 0 auto;
+}
+
+.html,
+.css,
+.javascript,
+.python,
+.typescript{
+    padding: 10px;
+}
+
+.html-about,
+.css-about,
+.javascript-about,
+.python-about,
+.typescript-about{
+    padding: 5px;
+}
+
+.html-about h3,
+.css-about h3,
+.javascript-about h3,
+.python-about h3,
+.typescript-about h3{
+    padding: 5px;
+    text-align: center;
+}
+
+.html-about p,
+.css-about p,
+.javascript-about p,
+.python-about p,
+.typescript-about p{
+    padding: 1% 5%;
+    font-size: 1.2rem;
+}
+
+.reference-container{
+    padding: 20px 0px 0px 0px;
+}
+
+.reference{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: beige;
+}
+
+footer{
+    background-color: rgba(0, 0, 255, 0.619);
+}
+
+footer p{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;    
+}
+
+@media(width< 768px){
+   .profil-picture{
+    height: 80%;
+    width: 80%;
+   }
+
+   .html img,
+    .css img,
+    .javascript img,
+    .python img,
+    .typescript img{
+        height: 150px;
+    }
+}

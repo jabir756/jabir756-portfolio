@@ -1,17 +1,28 @@
 //Run script after dom loaded
 document.addEventListener("DOMContentLoaded", ()=>{
+
+    //Menu button
+    document.getElementById("menu").addEventListener("click", () => {
+        document.getElementById("nav-container").classList.toggle("nav-container-show");
+    });
+
     //Mail to for sending me a mail 
     document.getElementById("mail-to").addEventListener("click", () => {
         window.location.href = "mailto:jabirkagone6@gmail.com";
     });
 
-    //Menu button
-    document.querySelector("header span").addEventListener("click", () => {
-        document.querySelector("header nav").classList.toggle("nav-show")
-    });
-
     //open git on click
     document.getElementById("git-btn").addEventListener("click", () => {
+        window.open("https://github.com/jabir756");
+    });
+
+     //Mail to for sending me a mail in profil 
+    document.getElementById("profil-mail-to").addEventListener("click", () => {
+        window.location.href = "mailto:jabirkagone6@gmail.com";
+    });
+
+    //open git on click in profil
+    document.getElementById("profil-git-btn").addEventListener("click", () => {
         window.open("https://github.com/jabir756");
     });
 
