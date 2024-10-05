@@ -19,12 +19,12 @@ header{
     flex-direction: column;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(40px);
 }
 
 .span-container{
     display: flex;
     background-color: #000;
+    padding: 10px 5px;
 }
 
 .span-container h3{
@@ -46,6 +46,10 @@ header{
     cursor: pointer;
     width: 40%;
     font-weight: 600;
+}
+
+.nav-container nav{
+    background-color: #ffffff;
 }
 
 .nav-container nav,

@@ -1,4 +1,5 @@
 //Run script after dom loaded
+"use strict";
 document.addEventListener("DOMContentLoaded", ()=>{
 
     //Menu button
