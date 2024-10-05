@@ -1,16 +1,13 @@
 @media (width< 678px) {
 
-    header{
-        background-color: #ffffff;
-    }
-
     header span{
         display: flex;
         align-items: center;
         font-size: 2rem;
         margin: 0px 5px;
         cursor: pointer;
-        width: max-content;        
+        width: max-content;
+        color: #f5f5f5;        
     }
 
     header nav{
@@ -26,22 +23,21 @@
         display: flex;
     }
 
-    button{
+    a{
         font-size: 1.06rem;
         padding: 5px;
         margin: 5px 0px;
+        color: #ffffff;
+        background:transparent;
     }
 
     .name,
     section{
-        margin: 0px 10px;
-    }
-
-    .name{
-        margin-top: 50px;
+        padding: 0px 10px;
     }
     
     ul{
         width: auto;
     }
+    
 }

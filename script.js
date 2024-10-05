@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("git-btn").addEventListener("click", () => {
         window.open("https://github.com/jabir756");
     });
-    
+
 })
