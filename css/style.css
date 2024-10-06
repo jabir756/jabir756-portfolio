@@ -23,8 +23,9 @@ header{
 
 .span-container{
     display: flex;
-    background-color: #000;
+    background-color: #000000c7;
     padding: 10px 5px;
+    backdrop-filter: blur(20px);
 }
 
 .span-container h3{
@@ -48,7 +49,8 @@ header{
 }
 
 .nav-container nav{
-    background-color: #ffffff;
+    background-color: #ffffff98;
+    backdrop-filter: blur(20px);
 }
 
 .nav-container nav,
@@ -98,9 +100,10 @@ img{
 }
 
 .profil-picture{
-    height: 40%;
-    width: 40%;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .profil-about{
@@ -175,12 +178,12 @@ footer p{
 }
 
 @media(width< 768px){
-   .profil-picture{
-    height: 80%;
-    width: 80%;
-   }
+    .profil-picture{
+        height: 200px;
+        width: 200px;
+    }
 
-   .html img,
+    .html img,
     .css img,
     .javascript img,
     .python img,
