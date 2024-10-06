@@ -23,7 +23,7 @@ header{
 
 .span-container{
     display: flex;
-    background-color: #000000c7;
+    background-color: rgba(0, 0, 255, 0.619);
     padding: 10px 5px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
