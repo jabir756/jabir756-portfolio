@@ -53,30 +53,25 @@ header{
     -webkit-backdrop-filter: blur(20px);
 }
 
-.nav-container nav,
-.profil-about nav{
+.nav-container nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
     width: 100%;
     padding: 10px 0px;
 }
 
-.nav-container nav a,
-.profil-about nav a{
-    padding: 5px;
+.nav-container nav a{
+    padding: 5px 30px;
     margin: 5px 0px;
-    background-color: rgba(0, 0, 255, 0.509);
-    border-radius: 25px;
-    width: 40%;
+    width: fit-content;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease-out;
 }
 
-.nav-container nav a:hover,
-.profil-about nav a:hover{
+.nav-container nav a:hover{
     transform: scale(1.05);
 }
 
@@ -115,6 +110,27 @@ img{
 .profil-about p{
     font-size: 1.5rem;
     padding: 5px;
+}
+
+.profil-buttons{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+.profil-buttons button{
+    padding: 10px 20px;
+    margin: 0px 5px;
+    background-color: rgba(0, 128, 0, 0.682);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.profil-buttons button:hover{
+    background-color: rgba(0, 128, 0, 0.882);
 }
 
 .skills-list{
