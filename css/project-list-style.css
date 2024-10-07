@@ -1,4 +1,5 @@
-.projects h2{
+.projects-list-head{
+    padding: 10px;
     text-align: center;
     background-color: rgba(255, 0, 0, 0.367);
 }
@@ -8,8 +9,7 @@
     flex-direction: column;
 }
 
-.pokedex h3{
-    text-align: center;
+.pokedex h2{
     padding: 10px;
 }
 
