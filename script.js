@@ -7,16 +7,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         document.getElementById("nav-container").classList.toggle("nav-container-show");
     });
 
-    //Mail to for sending me a mail 
-    document.getElementById("mail-to").addEventListener("click", () => {
-        window.location.href = "mailto:jabirkagone6@gmail.com";
-    });
-
-    //open git on click
-    document.getElementById("git-btn").addEventListener("click", () => {
-        window.open("https://github.com/jabir756");
-    });
-
      //Mail to for sending me a mail in profil 
     document.getElementById("profil-mail-to").addEventListener("click", () => {
         window.location.href = "mailto:jabirkagone6@gmail.com";
@@ -26,5 +16,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("profil-git-btn").addEventListener("click", () => {
         window.open("https://github.com/jabir756");
     });
-
 })

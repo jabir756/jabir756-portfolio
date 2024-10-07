@@ -1,10 +1,14 @@
 *,
 *::before,
-*::after,
-html{
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body{
@@ -17,11 +21,12 @@ body{
 header{
     display: flex;
     flex-direction: column;
+    background: url('/background-img/header-bg.jpg');
+    background-size: cover;
 }
 
 .span-container{
     display: flex;
-    background-color: #0000b2c1;
     padding: 5px 5px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -29,7 +34,7 @@ header{
 
 .span-container h3{
     display: flex;
-    width: 60%;
+    width: 97%;
     font-size: 1.5rem;
     padding: 5px;
     color: #fff;
@@ -43,14 +48,8 @@ header{
     padding: 5px;
     color: #fff;
     cursor: pointer;
-    width: 40%;
+    width: 3%;
     font-weight: 600;
-}
-
-.nav-container nav{
-    background-color: #ffffff98;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav-container nav{
@@ -64,11 +63,15 @@ header{
 
 .nav-container nav a{
     padding: 5px 30px;
-    margin: 5px 0px;
+    margin: 5px 10px;
+    background-color: #fff;
     width: fit-content;
+    color: #333;
     text-align: center;
     cursor: pointer;
+    border-radius: 3px;
     transition: transform 0.3s ease-out;
+    text-decoration: none;
 }
 
 .nav-container nav a:hover{
@@ -87,11 +90,18 @@ img{
     object-fit: contain;
 }
 
+.profil-container{
+    position: relative;
+}
+
 .profil{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    background: url('/background-img/profil-bg.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .profil-picture{
@@ -135,8 +145,21 @@ img{
     background-color: orange;
 }
 
+.blur-line{
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 .skills-list{
+    padding: 40px 0px 20px 0px;
     margin: 0 auto;
+    background: url('/background-img/skills-list-bg.jpg');
 }
 
 .html,
@@ -155,11 +178,11 @@ img{
     padding: 5px;
 }
 
-.html-about h3,
-.css-about h3,
-.javascript-about h3,
-.python-about h3,
-.typescript-about h3{
+.html-about h2,
+.css-about h2,
+.javascript-about h2,
+.python-about h2,
+.typescript-about h2{
     padding: 5px;
     text-align: center;
 }
@@ -170,12 +193,8 @@ img{
 .python-about p,
 .typescript-about p{
     padding: 1% 5%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
-}
-
-.reference-container{
-    padding: 20px 0px 0px 0px;
 }
 
 .reference{
