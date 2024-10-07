@@ -65,7 +65,7 @@ header{
     padding: 5px 30px;
     margin: 5px 10px;
     background-color: #fff;
-    width: fit-content;
+    width: 200px;
     color: #333;
     text-align: center;
     cursor: pointer;
@@ -157,17 +157,12 @@ img{
 }
 
 .skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
     padding: 40px 0px 20px 0px;
     margin: 0 auto;
-    background-image: url('../background-img/skills-list-bg.jpg');
-}
-
-.html,
-.css,
-.javascript,
-.python,
-.typescript{
-    margin: 10px;
+    background-color: #f5f5f5;
 }
 
 .html-about,
@@ -176,9 +171,6 @@ img{
 .python-about,
 .typescript-about{
     padding: 5px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 25px;
 }
 
 .html-about h2,
