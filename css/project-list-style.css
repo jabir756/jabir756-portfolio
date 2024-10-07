@@ -1,0 +1,20 @@
+.projects h2{
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.367);
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.pokedex h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.pokedex img{
+    object-fit: cover;
+    border-radius: 25px;
+}

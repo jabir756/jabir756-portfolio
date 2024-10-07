@@ -16,4 +16,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("profil-git-btn").addEventListener("click", () => {
         window.open("https://github.com/jabir756");
     });
+
+    //open certification page
+    document.getElementById("profil-certification-btn").addEventListener("click", () => {
+        window.open("./certification.html");
+    });
 })
