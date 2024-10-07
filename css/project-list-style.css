@@ -6,7 +6,6 @@
 .projects-list{
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .pokedex h3{
@@ -16,5 +15,4 @@
 
 .pokedex img{
     object-fit: cover;
-    border-radius: 25px;
 }
