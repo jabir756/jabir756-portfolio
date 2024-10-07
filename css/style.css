@@ -21,7 +21,7 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    background-image: url('/background-img/header-bg.jpg');
+    background-image: url('../background-img/header-bg.jpg');
     background-size: cover;
 }
 
@@ -99,7 +99,7 @@ img{
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background-image: url('/background-img/profil-bg.png');
+    background-image: url('../background-img/profil-bg.png');
     background-size: cover;
     background-position: center;
 }
@@ -159,7 +159,7 @@ img{
 .skills-list{
     padding: 40px 0px 20px 0px;
     margin: 0 auto;
-    background-image: url('/background-img/skills-list-bg.jpg');
+    background-image: url('../background-img/skills-list-bg.jpg');
 }
 
 .html,
