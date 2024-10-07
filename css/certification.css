@@ -90,7 +90,7 @@ header{
 }
 
 main div img{
-    width: 80%;
+    width: 600px;
     height: auto;
     object-fit: cover;
 }
