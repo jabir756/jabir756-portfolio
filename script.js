@@ -21,4 +21,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("profil-certification-btn").addEventListener("click", () => {
         window.open("./certification.html");
     });
+
+    //open project page 
+    document.getElementById("profil-project-btn").addEventListener("click", () => {
+        window.open("./project.html");
+    });
 })

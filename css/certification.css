@@ -18,13 +18,17 @@ body{
     background-color: #ffffff;
 }
 
-main div img{
+.certification-list img{
     width: 600px;
     height: auto;
     object-fit: cover;
 }
 
-main{
+.certification-head h1{
+    text-align: center;
+}
+
+.certification-list{
     display: flex;
     flex-wrap: wrap;
     background-color: #f5f5f5;
@@ -33,7 +37,7 @@ main{
     background-image: url(../background-img/certificates-bg.jpg);
 }
 
-main div{
+.certification-list div{
     margin: 10px;
     padding: 10px;
     backdrop-filter: blur(100px);
@@ -41,12 +45,12 @@ main div{
 }
 
 @media(width<700px){
-    main div img{
+    .certification-list img{
         width: 100%;
         height: auto;
     }
 
-    main div{
+    .certification-list div{
         margin: 5px;
     }
 }
