@@ -50,7 +50,7 @@ img{
     padding: 5px;
 }
 
-.profil-buttons{
+.profil-lens{
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0px;
@@ -58,7 +58,7 @@ img{
     align-items: center;
 }
 
-.profil-buttons button{
+.profil-lens a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,10 +70,11 @@ img{
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease-out;
 }
 
-.profil-buttons button:hover{
+.profil-lens a:hover{
     background-color: orange;
 }
 
