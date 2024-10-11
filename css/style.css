@@ -50,84 +50,17 @@ img{
     padding: 5px;
 }
 
-.profil-lens{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0px;
-    justify-content: center;
-    align-items: center;
-}
-
-.profil-lens a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 10px 5px;
-    background-color: rgba(255, 166, 0, 0.652);
-    color: #333;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease-out;
-}
-
-.profil-lens a:hover{
-    background-color: orange;
-}
-
 .blur-line{
     position: absolute;
-    padding: 10px;
+    padding: 5px;
     left: 0;
-    bottom: -12px;
+    bottom: -8px;
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-.skills-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 20px 0px;
-    gap: 40px;
-    margin: 0 auto;
-    background-image: url('../background-img/skills-list-bg.jpg');
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-}
-
-.html-about,
-.css-about,
-.javascript-about,
-.python-about,
-.typescript-about{
-    padding: 5px;
-}
-
-.html-about h2,
-.css-about h2,
-.javascript-about h2,
-.python-about h2,
-.typescript-about h2{
-    padding: 5px;
-    text-align: center;
-}
-
-.html-about p,
-.css-about p,
-.javascript-about p,
-.python-about p,
-.typescript-about p{
-    padding: 1% 5%;
-    font-size: 1.2rem;
-    text-align: center;
-}
 
 .reference{
     text-align: center;
