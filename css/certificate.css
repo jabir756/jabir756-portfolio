@@ -1,20 +1,24 @@
-.certificate-container{
+.certificate-container {
     display: flex;
     flex-direction: column;
     user-select: none;
     -webkit-user-drag: none;
+    width: 80%; /* Ajustement pour les petits écrans */
+    max-width: 800px;
+    margin: 0px auto;
 }
 
-.certificate-content{
+.certificate-slider {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
 }
 
 .spanPrev,
-.spanNext{
-    padding: 2rem 1rem;
-    margin: 0rem 0.5rem;
+.spanNext {
+    padding: 40px 10px; /* Réduction du padding sur petits écrans */
+    margin: 0px 5px;
     border: 1px solid #333;
     color: #333;
     cursor: pointer;
@@ -22,28 +26,38 @@
 }
 
 .spanPrev:hover,
-.spanNext:hover{
+.spanNext:hover {
     transform: scale(1.05);
 }
 
-.roll{
-    display: flex;
-    width: 48rem;
-    height: auto;
-}
-
-.roll img{
+.certificate-slider img {
     width: 100%;
+    max-width: 700px;
     height: auto;
     object-fit: contain;
 }
 
-.certificate-page{
+.certificate-page {
     text-align: center;
-    margin: 0rem auto;
-    padding: 0.3rem;
+    margin: 10px auto;
+    width: 85%;
+    max-width: 700px;
     font-size: 1.1rem;
-    width: 44%;
-    background-color: #333;
+    background-color: #333333a1;
+    border-radius: 3px;
     color: #ffffff;
+}
+
+/* Responsive pour les petits écrans (smartphones) */
+@media (max-width: 600px) {
+    .spanPrev,
+    .spanNext {
+        padding: 20px 5px; /* Réduction supplémentaire du padding */
+        font-size: 1rem;   /* Réduction de la taille de la police */
+    }
+
+    .certificate-page {
+        font-size: 1rem; /* Réduction de la taille de la police */
+        width: 100%;
+    }
 }
