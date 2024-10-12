@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/certificate.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/style.css">
     <title>jabir portfolio</title>
 </head>
+
 <body>
     <header>
         <nav class="lens">
@@ -24,15 +25,14 @@
                 <p>GitHub</p>
             </a>
             <a href="project.html" target="_blank">
-                <img src="icon/project.svg" alt="project-icon" width="20px"
-                height="20px" class="icon">
+                <img src="icon/project.svg" alt="project-icon" width="20px" height="20px" class="icon">
                 <p>Projects</p>
             </a>
         </nav>
     </header>
     <main>
         <div class="profil-container">
-            <div class="profil">                        
+            <div class="profil">
                 <div class="profil-about">
                     <h1 class="name">JABIR KAGONE</h1>
                     <p class="job-title">Développeur Web et Mobile</p>
@@ -40,37 +40,65 @@
             </div>
         </div>
 
-        <!--Certificate part-->
-        <div class="certificate-container">
-            <div class="certificate-slider">
-                <span class="spanPrev" id="spanPrev"> < </span>
-                <img src="certificate/css-udemy.jpg" alt=""
-                id="certifImg">
-                <span class="spanNext" id="spanNext"> > </span>
-            </div>
-            <p class="certificate-page" id="certifPage">1</p>            
-        </div>
+        <!--Skills part-->
+        <section class="education-section">
+            <h2 class="section-heading">Formation</h2>
 
-    <!--Skills part-->
-        <div class="skills-container">
-            <div class="skills-list" id="skills-list">
-                <div>
-                    <img src="logo/html-logo.png" alt="" class="skill-logo">
-                    <h5 class="skill-title">HTML</h5>
-                </div>
+            <div class="education-item">
+                <h3 class="education-degree">BAC (Bilan annuel de composition)</h3>
+                <p class="education-period">2015-2022</p>
+                <p class="education-institution">Lycée Brain Fields</p>
             </div>
-        </div>
+
+            <div class="education-item">
+                <h3 class="education-degree">Diplôme d’études collégiales</h3>
+                <p class="education-period">2023-2026 (En cours)</p>
+                <p class="education-program">en programmation informatique</p>
+                <p class="education-institution">Collège de la cité d’Ottawa</p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-heading">Compétences</h2>
+
+            <div class="skills-category">
+                <h3 class="skills-title">Langues</h3>
+                <p class="skills-detail">français (Courant), anglais (Intermédiaire)</p>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-title">Maîtrise des logiciels</h3>
+                <p class="skills-detail">Word, Excel, PowerPoint, MS Project</p>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-title">Autres compétences</h3>
+                <ul class="skills-list">
+                    <li>Polyvalence</li>
+                    <li>Capable de travailler seul ou en équipe</li>
+                    <li>Gestion d’inventaire</li>
+                    <li>Service à la clientèle</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-title">Programmation</h3>
+                <ul class="skills-list">
+                    <li>ChatGPT, Copilot, …</li>
+                    <li>HTML, CSS, XML, XAML</li>
+                    <li>JAVASCRIPT, PYTHON</li>
+                </ul>
+            </div>
+        </section>
 
         <!--References part-->
         <div>
-            <h2 class="reference">Références disponibles sur demande.</h2>
+            <p class="reference">Références disponibles sur demande.</p>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Jabir Portfolio website</p>
     </footer>
-
-    <script src="js/certificateSlide.js"></script>
-    <script src="js/skills.js"></script>
 </body>
+
 </html>
