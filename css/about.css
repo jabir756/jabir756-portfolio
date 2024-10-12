@@ -1,0 +1,29 @@
+.about,
+.projects {
+    background-color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.skills ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills ul li {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+}

@@ -1,0 +1,18 @@
+.contact p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.contact a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact a:hover {
+    background-color: #0056b3;
+}
