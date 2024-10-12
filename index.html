@@ -8,7 +8,7 @@
     </style>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/certificate.css">
-    <link rel="stylesheet" href="css/skills-list.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/style.css">
     <title>jabir portfolio</title>
 </head>
@@ -37,65 +37,29 @@
                     <h1 class="name">JABIR KAGONE</h1>
                     <p class="job-title">Développeur Web et Mobile</p>
                 </div>
-            </div>            
-
-            <!--Blur line-->
-            <div class="blur-line"></div> 
+            </div>
         </div>
 
         <!--Certificate part-->
-        <div class="container">
-            <div class="roll">
-                <img src="certificate/css-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/git-github-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/html-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/javascript-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/css-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/git-github-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/html-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/javascript-udemy.jpg" alt="" width="400px" height="400px"><img src="certificate/css-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/git-github-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/html-udemy.jpg" alt="" width="400px" height="400px">
-                <img src="certificate/javascript-udemy.jpg" alt="" width="400px" height="400px">
+        <div class="certificate-container">
+            <div class="certificate-content"> 
+                <span class="spanPrev" id="spanPrev"> < </span>
+                    <div class="roll">
+                        <img src="certificate/css-udemy.jpg" alt=""
+                        id="certifImg">
+                    </div>
+                <span class="spanNext" id="spanNext"> > </span>
             </div>
+            <p class="certificate-page" id="certifPage">1</p>
         </div>
 
     <!--Skills part-->
-        <div class="skills-list">
-             <!--Blur line-->
-             <div class="blur-line2"></div> 
-
-            <div class="html">
-                <img src="logo/html-logo.png" alt="html-logo" width="100%" height="200px">
-                <div class="html-about">
-                    <h2>HTML</h2>
-                    <p>Langage standard utilisé pour créer des pages web. Il permet de structurer et d'organiser le contenu d'une page à l'aide de balises. Ces balises indiquent au navigateur comment afficher le texte, les images, les liens, les formulaires, etc.
-                    </p>   
-                </div>         
-            </div>
-    
-            <div class="css">
-                <img src="logo/css-logo.png" alt="css-logo" width="100%" height="200px">
-                <div class="css-about">
-                    <h2>CSS</h2>
-                    <p>Langage de style pour les applications web, le CSS permet de contrôler son apparence : les couleurs, les polices, les marges, les alignements, les bordures, et bien d'autres aspects visuels.</p>
-                </div>            
-            </div>
-    
-            <div class="javascript">
-                <img src="logo/javascript-logo.webp" alt="javascript-logo" width="100%" height="200px">
-                <div class="javascript-about">
-                    <h2>JavaScript</h2>                        
-                    <p>Langage de programmation permettant d'ecrire des scripts il est aussi utiliser comme Langage front-end et back-end pour application web.</p> 
-                </div>           
-            </div>
-    
-            <div class="python">
-                <img src="logo/python-logo.png" alt="python-logo" width="100%" height="200px">
-                <div class="python-about">
-                    <h2>Python</h2>
-                    <p>Langage de programmation permettant d'ecrire des scripts il est aussi utiliser comme Langage back-end pour application web; il est surtout utiliser en etude de donnees de masse dans le numerique.</p>     
-                </div>       
+        <div class="skills-container">
+            <div class="skills-list" id="skills-list">
+                <div>
+                    <img src="logo/html-logo.png" alt="" class="skill-logo">
+                    <h4 class="skill-title">HTML</h4>
+                </div>
             </div>
         </div>
 
@@ -108,5 +72,7 @@
         <p>&copy; 2024 Jabir Portfolio website</p>
     </footer>
 
+    <script src="js/certificateSlide.js"></script>
+    <script src="js/skills.js"></script>
 </body>
 </html>

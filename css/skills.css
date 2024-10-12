@@ -1,0 +1,33 @@
+.skills-container{
+    padding: 1.2rem;
+    margin: 0 auto;
+    background-image: url('../background-img/certificates-bg.jpg');
+    background-size: auto;
+    background-position: center;
+    color: #fff;
+    margin-top: 0.6rem;
+}
+
+.skills-list{
+    display: flex;
+    justify-content: center;
+}
+
+.skills-list div{
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0.6rem;
+}
+
+.skill-logo{
+    width: 5rem;
+    object-fit: contain;
+}
+
+.skill-title{
+    padding: 0.3rem;
+    text-align: center;
+}

@@ -19,7 +19,7 @@ body{
 }
 
 .projects-list-head{
-    padding: 10px;
+    padding: 0.6rem;
     text-align: center;
     background-color: rgba(255, 0, 0, 0.367);
 }
@@ -30,7 +30,7 @@ body{
 }
 
 .pokedex h2{
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 .pokedex img{
