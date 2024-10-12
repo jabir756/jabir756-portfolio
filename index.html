@@ -1,104 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>jabir portfolio</title>
+    <meta name="description" content="Portfolio of JABIR KAGONE, a passionate programmer skilled in JABIR KAGONE.">
+    <title>JABIR KAGONE Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+    </nav>
+
+    <!-- Header / Hero Section -->
     <header>
-        <nav class="lens">
-            <a href="mailto:jabirkagone6@gmail.com" target="_blank">
-                <img width="20px" height="20px" src="icon/mail.svg" alt="mail-icon" class="icon">
-                <p>Contact</p>
-            </a>
-            <a href="https://github.com/jabir756" target="_blank">
-                <img width="20px" height="20px" src="icon/github.svg" alt="github-icon" class="icon">
-                <p>GitHub</p>
-            </a>
-            <a href="project.html" target="_blank">
-                <img src="icon/project.svg" alt="project-icon" width="20px" height="20px" class="icon">
-                <p>Projects</p>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <div class="profil-container">
-            <div class="profil">
-                <div class="profil-about">
-                    <h1 class="name">JABIR KAGONE</h1>
-                    <p class="job-title">Développeur Web et Mobile</p>
-                </div>
-            </div>
-        </div>
-
-        <!--Skills part-->
-        <section class="education-section">
-            <h2 class="section-heading">Formation</h2>
-
-            <div class="education-item">
-                <h3 class="education-degree">BAC (Bilan annuel de composition)</h3>
-                <p class="education-period">2015-2022</p>
-                <p class="education-institution">Lycée Brain Fields</p>
-            </div>
-
-            <div class="education-item">
-                <h3 class="education-degree">Diplôme d’études collégiales</h3>
-                <p class="education-period">2023-2026 (En cours)</p>
-                <p class="education-program">en programmation informatique</p>
-                <p class="education-institution">Collège de la cité d’Ottawa</p>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2 class="section-heading">Compétences</h2>
-
-            <div class="skills-category">
-                <h3 class="skills-title">Langues</h3>
-                <p class="skills-detail">français (Courant), anglais (Intermédiaire)</p>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="skills-title">Maîtrise des logiciels</h3>
-                <p class="skills-detail">Word, Excel, PowerPoint, MS Project</p>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="skills-title">Autres compétences</h3>
-                <ul class="skills-list">
-                    <li>Polyvalence</li>
-                    <li>Capable de travailler seul ou en équipe</li>
-                    <li>Gestion d’inventaire</li>
-                    <li>Service à la clientèle</li>
-                </ul>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="skills-title">Programmation</h3>
-                <ul class="skills-list">
-                    <li>ChatGPT, Copilot, …</li>
-                    <li>HTML, CSS, XML, XAML</li>
-                    <li>JAVASCRIPT, PYTHON</li>
-                </ul>
-            </div>
-        </section>
-
-        <!--References part-->
         <div>
-            <p class="reference">Références disponibles sur demande.</p>
+            <h1>Hi, I'm JABIR KAGONE</h1>
+            <p>A Passionate Developer</p>
+            <a href="#projects" class="btn">See My Work</a>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Jabir Portfolio website</p>
-    </footer>
-</body>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy building everything from small business sites to rich interactive web apps. I'm always looking to learn and grow.</p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project-img/pokedex-img.png" alt="Project 1">
+                <h3>Pokedex</h3>
+                <p>Online Pokedex client side using simple Html, Css and Javascript.</p>
+                <a href="https://jabir756.github.io/pokedex/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://source.unsplash.com/500x300/?app" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A short description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to work with me, feel free to contact me below:</p>
+        <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+        <a href="https://github.com/jabir756">GitHub</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JABIR KAGONE. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
