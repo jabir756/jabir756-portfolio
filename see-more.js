@@ -10,7 +10,7 @@ projectLens = [
 
 // Project Descriptions 1: Project Name, Description
 projectDetails = [
-    ['home interface android', 'Create home interface for college la cite using kotlin and xml']
+    ['Home interface android', 'Create home interface for college la cite using kotlin and xml']
 ];
 
 // Get the grid container for projects
