@@ -25,11 +25,11 @@ const a = document.createElement('a');
 
 // Set the number of elements to display
 numberElementToDisplay = 0;
-document.getElementById('see-more').addEventListener('click', (e) => {
-    e.preventDefault();
-    numberElementToDisplay += 2;
-    // Loop through each project and create a new div for each
-    for (let i = 0; i < numberElementToDisplay; i++) {
+
+// Function to display the initial cards
+function displayCards(numberElementToDisplay){
+     // Loop through each project and create a new div for each
+     for (let i = 0; i < numberElementToDisplay; i++) {
         div.classList.add('project-card');
 
         img.src = projectImgSrc[i][0];
@@ -48,5 +48,11 @@ document.getElementById('see-more').addEventListener('click', (e) => {
 
         projectGrid.append(div);
     }
-});
+}
 
+// On see more link click call the function to display the initial cards
+document.getElementById('see-more').addEventListener('click', (e) => {
+    e.preventDefault();
+    numberElementToDisplay += 2;
+    displayCards(numberElementToDisplay);
+});
