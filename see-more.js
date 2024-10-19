@@ -4,7 +4,7 @@ projectImgSrc = [
 ];
 
 // Project Link
-projectLens = [
+projectLinks = [
     'https://github.com/jabir756/home-interface-android.git'
 ]
 
@@ -38,7 +38,7 @@ document.getElementById('see-more').addEventListener('click', (e) => {
         h3.textContent = projectDetails[i][0];
         p.textContent = projectDetails[i][1];
 
-        a.href = projectLens[i];
+        a.href = projectLinks[i];
         a.textContent = 'View Project';
 
         div.appendChild(img);
