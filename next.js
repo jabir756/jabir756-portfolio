@@ -51,7 +51,7 @@ function displayCards(numberElementToDisplay){
 }
 
 // On see more link click call the function to display the initial cards
-document.getElementById('see-more').addEventListener('click', (e) => {
+document.getElementById('next').addEventListener('click', (e) => {
     e.preventDefault();
     numberElementToDisplay += 2;
     displayCards(numberElementToDisplay);
