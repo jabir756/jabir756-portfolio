@@ -29,7 +29,7 @@ numberElementToDisplay = 0;
 // Function to display the initial cards
 function displayCards(numberElementToDisplay){
      // Loop through each project and create a new div for each
-     for (let i = 0; i < numberElementToDisplay; i++) {
+    for (let i = 0; i < numberElementToDisplay; i++) {
         div.classList.add('project-card');
 
         img.src = projectImgSrc[i][0];
