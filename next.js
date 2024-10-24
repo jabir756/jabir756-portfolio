@@ -50,7 +50,7 @@ function displayCards(numberElementToDisplay){
     }
 }
 
-// On see more link click call the function to display the initial cards
+// On next button click call the function to display the initial cards
 document.getElementById('next').addEventListener('click', (e) => {
     e.preventDefault();
     numberElementToDisplay += 2;
