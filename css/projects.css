@@ -1,4 +1,4 @@
-.projects .project-grid {
+.projects .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     gap: 20px;
