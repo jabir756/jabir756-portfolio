@@ -25,6 +25,13 @@ document.getElementById('next').addEventListener('click', (e) => {
     if(numberElementToDisplay>=projectsArray.length){
         return
     }
+    // if modulo of projectsArray different to 0 put number element to display to 1
+    // to avoid to display empty element 
+    else if(projectsArray.length%2 !== 0){
+        numberElementToDisplay += 1;
+        displayCards(numberElementToDisplay);
+    }
+    // if modulo of projectsArray different to 0 put number element to display to 2
     else{
         numberElementToDisplay += 2;
         displayCards(numberElementToDisplay);
