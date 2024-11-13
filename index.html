@@ -9,90 +9,102 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="top-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+    <nav class="nav bg-dark">
+        <div class="menu">
+            <button>Menu</button>
+            <div class="menu-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Header / Hero Section -->
-    <header>
-        <div>
+    <header class="container-fluid">
+        <div class="container text-center p-5">
             <h1>Hi, I'm JABIR KAGONE</h1>
             <p>A Passionate Developer</p>
-            <a href="#projects">See My Work</a>
+            <a class="btn btn-primary" href="#projects">See My Work</a>
         </div>
     </header>
 
-    <main>
-        <!-- Presentation -->
-        <div class="about" id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy building everything from small business sites to
-                rich interactive web apps. I'm always looking to learn and grow.</p>
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
-                    <li>Git & GitHub</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-        </div>
+    <!-- Presentation -->
+    <div class="container text-center p-5">
+        <h2>About Me</h2>
+        <p>Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy building everything from small business sites to
+            rich interactive web apps. I'm always looking to learn and grow.</p>
+    </div>
 
-        <!-- Projects -->
-        <div class="projects" id="projects">
-            <h2>My Projects</h2>
-            <div class="cards">
-                <!--Pokedex web-->
-                <div class="project-card">
-                    <div class="card-img">
-                        <img src="project-img/pokedex-img.png" alt="Project 1">
-                    </div>
-                    <div class="card-infos">
+    <div class="container-fluid text-center">
+        <h2>Skills</h2>
+        <ul class="container d-flex flex-wrap gap-2 justify-content-center">
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">JavaScript</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">TypeScript</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">Python</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">Node.js</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">Git & GitHub</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">HTML</li>
+            <li class="list-group-item rounded p-1 text-white" style="background-color:green;">CSS</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid p-4">
+        <h2 class="text-center m-2">My Projects</h2>
+
+        <!-- Row pour contenir les cards -->
+        <div class="row justify-content-center gap-2">
+
+            <!--Pokedex web-->
+            <div class="col-12 col-sm-9 col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body d-flex flex-column ">
                         <h3>Pokedex web</h3>
-                        <p>Pokemons cards with images and descriptions.</p>
-                        <a href="https://jabir756.github.io/pokedex/" target="_blank">View Project</a>
+                        <p class="flex-grow-1">Pokemons cards with images and descriptions.</p>
+                        <a class="btn btn-primary" href="https://jabir756.github.io/pokedex/" target="_blank">
+                            View Project
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <!-- password-generator -->
-                <div class="project-card">
-                    <div class="card-img">
-                        <img src="project-img/password-generator.png" alt="password-generator">
-                    </div>
-                    <div class="card-infos">
+            <!-- password-generator -->
+            <div class="col-12 col-sm-9 col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
                         <h3>Password generator</h3>
-                        <p>Generate password.</p>
-                        <a href="https://jabir756.github.io/password-generator/" target="_blank">View Project</a>
+                        <p class="flex-grow-1">Generate password.</p>
+                        <a class="btn btn-primary" href="https://jabir756.github.io/password-generator/"
+                            target="_blank">
+                            View Project
+                        </a>
                     </div>
                 </div>
-                
-
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="container-fluid text-center p-3 bg-dark text-white">
         <!-- Contact -->
-        <div class="contact" id="contact">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or would like to work with me, feel free to contact me below:</p>
-            <div>
-                <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
-                <a href="https://github.com/jabir756">GitHub</a>
-            </div>
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to work with me, feel free to contact me below:</p>
+        <div class="container d-flex justify-content-center p-3 gap-2">
+            <a class="btn btn-primary" href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+            <a class="btn btn-primary" href="https://github.com/jabir756" target="_blank">GitHub</a>
         </div>
         <p>&copy; 2024 JABIR KAGONE. All Rights Reserved.</p>
     </footer>
