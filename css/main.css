@@ -30,10 +30,9 @@
 .skills-ctn ul li{
     padding: 5px;
     border-radius: 25px;
-    background-color: rgb(27, 185, 27);
-    color: white;
     text-transform: uppercase;
-
+    border: 1px solid;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .projects{

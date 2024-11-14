@@ -32,6 +32,7 @@ input[type="checkbox"]:not(:checked)+.content {
     position: absolute;
     right: 0;
     padding: 10px 20px;
+    background: transparent;
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     text-align: right;
