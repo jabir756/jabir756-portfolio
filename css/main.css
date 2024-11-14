@@ -1,0 +1,76 @@
+.about-ctn,
+.skills-ctn{
+    text-align: center;
+    padding: 40px 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-ctn h2,
+.skills-ctn h2{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .about-ctn,
+    .skills-ctn{
+        max-width: 300px;
+    }
+    
+}
+
+.skills-ctn ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-ctn ul li{
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(27, 185, 27);
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.projects{
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.projects h2{
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card p{
+    flex: 1;
+}
+
+.card a{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}

@@ -1,61 +1,19 @@
-body {
-    font-family: 'Poppins', sans-serif;
-}
-.nav {
-    display: flex;
-    justify-content: flex-end;
-}
-.menu {
-    position: relative;
-}
-.menu-links {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: whitesmoke;
-    text-align: right;
-    padding: 10px;
-    z-index: 1;
-}
-.menu-links a {
-    padding: 5px;
-    border-radius: 5px;
-    line-height: 2;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #333;
-}
-.menu-links a:hover {
-    background-color: rgb(67, 75, 216);
-    color: white;
-}
-.menu:hover .menu-links {
-    display: block;
-}
-.menu button {
-    font-size: 1.2rem;
-    text-align: center;
-    cursor: pointer;
-    padding: 10px 5px;
-    border: none;
-    background-color: blue;
-    color: white;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (width>768px) {
-    .menu-links {
-        display: block;
-        justify-content: flex-end;
-        position: static;
-        background-color: transparent;
-    }
-    .menu-links a {
-        color: white;
-        padding: 10px;
-        font-size: 1rem;
-    }
-    .menu button {
-        display: none;
-    }
-    
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    background-color: wheat;
 }

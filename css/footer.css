@@ -1,0 +1,21 @@
+.contact{
+    padding: 10px;
+    text-align: center;
+    background-color: #2c528c;
+    color: white;
+}
+
+.contact div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.contact div a{
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
