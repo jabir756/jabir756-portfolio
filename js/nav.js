@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             document.querySelector('.nav').style.backgroundColor = '#ffffff';
         } else {
             document.querySelector('#menu-btn').innerHTML = '&#9776;';
-            document.querySelector('#menu-btn').style.color = '#ffffff';
+            document.querySelector('#menu-btn').style.color = '#333333';
             document.querySelector('.content').style.display = 'none';
             document.querySelector('.nav').style.backgroundColor = 'transparent';
         }

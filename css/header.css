@@ -3,7 +3,6 @@ header {
     flex-direction: column;
     height: 100vh;
     position: relative;
-    background: url('../assets/php.webp') no-repeat center center/cover;
 }
 
 .nav{
@@ -19,7 +18,7 @@ header {
     border: none;
     padding: 5px 10px;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #333333;
     background-color: transparent;
 }
 
@@ -54,27 +53,18 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10;
-    padding: 10px;
-    backdrop-filter: blur(15px);
-    --webkit-backdrop-filter: blur(15px);
-    color: #f5f5f5;
+    align-items: center;
 }
 
 .introduce a {
     text-decoration: none;
-    background-color: rgba(0, 0, 255, 0.735);
+    background-color: rgb(0, 0, 255);
     padding: 10px;
     border-radius: 5px;
-    color: #f5f5f5;
+    color: #ffffff;
+    width: max-content;
 }
 
 .introduce a:hover {
-    background-color: rgba(0, 0, 255, 0.9);
-}
-
-@media screen and (min-width: 768px) {
-    .introduce {
-        padding: 50px;
-    } 
-
+    background-color: rgb(31, 31, 199);
 }
