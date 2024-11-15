@@ -10,29 +10,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <div class="nav">
-        <label for="menu-checkbox">&#9776;</label>
-        <input type="checkbox" id="menu-checkbox">
-        <div class="content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
-        </div>
-    </div>
-
     <!-- Header / Hero Section -->
     <header>
-        <div data-aos="zoom-in" data-aos-duration="1000">
+        <!-- Navigation -->
+        <div class="nav">
+            <div class="content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+            </div>
+            <button id="menu-btn">&#9776;</button>
+        </div>
+
+        <div class="introduce" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Hi, I'm JABIR KAGONE</h1>
             <p>A Passionate Developer</p>
             <a href="#projects">See My Work</a>
@@ -110,6 +107,7 @@
         <p>&copy; 2024 JABIR KAGONE. All Rights Reserved.</p>
     </footer>
 
+    <script src="js/nav.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

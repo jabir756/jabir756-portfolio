@@ -6,14 +6,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-}
-main {
-    flex: 1;
-    background-color: wheat;
 }
