@@ -13,6 +13,20 @@ header {
     align-items: center;
 }
 
+.nav-dark{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    background-color: wheat;
+}
+
+#theme{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
 .nav button{
     cursor: pointer;
     border: none;
@@ -34,6 +48,20 @@ header {
     flex-direction: column;
     z-index: 1;
     background-color: #ffffff;
+}
+
+.content-dark{
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    height: 100vh;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    background-color: wheat;
 }
 
 .content a {
@@ -59,7 +87,7 @@ header {
 .introduce a {
     text-decoration: none;
     background-color: rgb(0, 0, 255);
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     color: #ffffff;
     width: max-content;

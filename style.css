@@ -19,3 +19,12 @@ body {
     flex-direction: column;
     background-color: white;
 }
+
+.body-dark{
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+}
