@@ -3,6 +3,9 @@ header {
     flex-direction: column;
     height: 100vh;
     position: relative;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
 .nav{
@@ -11,15 +14,8 @@ header {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
-}
-
-.nav-dark{
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    background-color: wheat;
+    background-color: #ffffff;
+    
 }
 
 .cv{
@@ -35,11 +31,6 @@ header {
 
 .cv:hover{
     transform: scale(1.05);
-}
-
-#theme{
-    margin: 0px 20px;
-    cursor: pointer;
 }
 
 .nav button{
@@ -63,20 +54,6 @@ header {
     flex-direction: column;
     z-index: 1;
     background-color: #ffffff;
-}
-
-.content-dark{
-    position: absolute;
-    top: 55px;
-    right: 0px;
-    height: 100vh;
-    width: 100%;
-    text-align: right;
-    padding: 20px;
-    display: none;
-    flex-direction: column;
-    z-index: 1;
-    background-color: wheat;
 }
 
 .content a {

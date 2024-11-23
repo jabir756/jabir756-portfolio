@@ -22,15 +22,3 @@ body {
     scrollbar-width: thin;
     overflow-x: hidden;
 }
-
-.body-dark{
-    font-family: 'Poppins', sans-serif;
-    color: #333333;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    background-color: wheat;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    overflow-x: hidden;
-}
