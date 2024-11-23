@@ -1,5 +1,9 @@
 main {
     flex: 1;
+    background-image: url('../header-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* about and skills */
