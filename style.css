@@ -18,6 +18,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 .body-dark{
@@ -27,4 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: wheat;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    overflow-x: hidden;
 }

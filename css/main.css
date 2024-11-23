@@ -5,7 +5,7 @@ main {
 /* about and skills */
 
 .about-ctn,
-.skills-ctn {
+.skills-ctn{
     text-align: center;
     padding: 40px 10px;
     max-width: 600px;
@@ -39,6 +39,22 @@ main {
     border-radius: 25px;
     text-transform: uppercase;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+/*Certificates*/
+.certificates-ctn{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 40px 0px;
+    gap: 10px;
+}
+
+.certificates-ctn img{
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
 }
 
 /* projects */
