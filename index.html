@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of JABIR KAGONE, a passionate programmer skilled in JABIR KAGONE.">
-    <title>JABIR KAGONE PORTFOLIO</title>
+    <title>JABIR KAGONE PORTFOLIO</title>    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script>
+        const images = document.querySelectorAll('img');
+        images.forEach((image) => { image.setAttribute('loading = loading="lazy"') })
+    </script>
+    <script src="js/nav.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
 </head>
 
 <body>
     <!-- Header --->
     <header>
         <!-- Navigation -->
-        <div class="nav">
+        <div data-aos="fade-down" data-aos-duration="1400" class="nav">
             <div class="content">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -26,7 +33,7 @@
             <button id="menu-btn">&#9776;</button>
         </div>
 
-        <div class="introduce" data-aos="zoom-in" data-aos-duration="1000">
+        <div data-aos="zoom-in" data-aos-duration="1600" class="introduce">
             <h1>Hi, I'm JABIR KAGONE</h1>
             <p>A Passionate Developer</p>
             <a href="#projects">See My Work</a>
@@ -36,35 +43,35 @@
     <!-- Main -->
     <main>
 
-        <div class="about-ctn" id="about">
-            <h2 data-aos="fade-up" data-aos-duration="1000">About Me</h2>
-            <p data-aos="fade-up" data-aos-duration="1400">Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy
+        <div data-aos="fade-up" data-aos-duration="1400" class="about-ctn" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy
                 building everything from small business sites to
                 rich interactive web apps. I'm always looking to learn and grow.</p>
         </div>
 
-        <div class="skills-ctn">
-            <h2 data-aos="fade-up" data-aos-duration="1000">Skills</h2>
+        <div data-aos="fade-up" data-aos-duration="1600" class="skills-ctn">
+            <h2>Skills</h2>
             <ul>
-                <li data-aos="fade-up" data-aos-duration="1100">JavaScript</li>
+                <li data-aos="fade-up" data-aos-duration="1000">JavaScript</li>
                 <li data-aos="fade-up" data-aos-duration="1200">TypeScript</li>
-                <li data-aos="fade-up" data-aos-duration="1300">Python</li>
-                <li data-aos="fade-up" data-aos-duration="1400">Node.js</li>
-                <li data-aos="fade-up" data-aos-duration="1500">Git & GitHub</li>
-                <li data-aos="fade-up" data-aos-duration="1600">HTML</li>
-                <li data-aos="fade-up" data-aos-duration="1700">CSS</li>
+                <li data-aos="fade-up" data-aos-duration="1400">Python</li>
+                <li data-aos="fade-up" data-aos-duration="1600">Node.js</li>
+                <li data-aos="fade-up" data-aos-duration="2000">Git & GitHub</li>
+                <li data-aos="fade-up" data-aos-duration="2200">HTML</li>
+                <li data-aos="fade-up" data-aos-duration="2400">CSS</li>
             </ul>
         </div>
 
         <!-- Projects -->
-        <div class="projects" id="projects">
-            <h2 data-aos="fade-up" data-aos-duration="1500">My Projects</h2>
+        <div data-aos="fade-up" data-aos-duration="1600" class="projects" id="projects">
+            <h2>My Projects</h2>
 
             <!--Cards container-->
             <div class="cards">
 
                 <!--Pokedex web-->
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
                     <img src="projects-img/pokedex.webp" alt="">
                     <h3>Pokedex web</h3>
                     <p>Pokemons cards with images and descriptions.</p>
@@ -75,7 +82,7 @@
 
                 <!-- password-generator -->
 
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
                     <img src="projects-img/password-generator.webp" alt="">
                     <h3>Password generator</h3>
                     <p>Generate password.</p>
@@ -86,7 +93,7 @@
 
                 <!-- portfolio -->
 
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
                     <img src="projects-img/portfolio.webp" alt="">
                     <h3>My portfolio</h3>
                     <p>My portfolio web site where you are actualy</p>
@@ -99,32 +106,32 @@
         </div>
 
         <!--Udemy certification-->
-        <div class="certificates">
-            <h2 data-aos="fade-up" data-aos-duration="1500">My Online Courses</h2>
+        <div data-aos="fade-up" data-aos-duration="1500" class="certificates">
+            <h2>My Online Courses</h2>
             <div class="certificates-ctn">
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/chatgpt & ia udemy.jpg" loading="lazy" alt="ChatGPT & AI Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/chatgpt & ia udemy.jpg" alt="ChatGPT & AI Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/css udemy.jpg" loading="lazy" alt="CSS Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/css udemy.jpg" alt="CSS Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/figma.jpg" loading="lazy" alt="Figma Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/figma.jpg" alt="Figma Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/git github udemy.jpg" loading="lazy" alt="Git & GitHub Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/git github udemy.jpg" alt="Git & GitHub Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/html udemy.jpg" loading="lazy" alt="HTML Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/html udemy.jpg" alt="HTML Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/javascript udemy.jpg" loading="lazy" alt="JavaScript Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/javascript udemy.jpg" alt="JavaScript Udemy">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/micro stage spot ia.jpg" loading="lazy" alt="Micro Stage Spot IA">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/micro stage spot ia.jpg" alt="Micro Stage Spot IA">
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2800" class="card">
-                    <img src="Udemy/typescript.jpg" loading="lazy" alt="TypeScript Udemy">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card">
+                    <img src="Udemy/typescript.jpg" alt="TypeScript Udemy">
                 </div>
             </div>
         </div>
@@ -134,15 +141,17 @@
     <!-- Footer -->
     <footer>
         <!-- Contact -->
-        <div class="contact">
-            <h2 data-aos="fade-up" data-aos-duration="2000">Contact Me</h2>
-            <p data-aos="fade-up" data-aos-duration="2600">If you have any questions or would like to work with
+        <div data-aos="fade-up" data-aos-duration="1600" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to work with
                 me, feel free to contact me below:</p>
-            <div data-aos="fade-up" data-aos-duration="2800">
-                <a href="mailto:jabirkagone6@gmail.com" target="_blank">
+            <div>
+                <a href="mailto:jabirkagone6@gmail.com"
+                   target="_blank">
                     Contact
                 </a>
-                <a href="https://github.com/jabir756" target="_blank">
+                <a href="https://github.com/jabir756"
+                   target="_blank">
                     GitHub
                 </a>
             </div>
@@ -150,9 +159,6 @@
         <p>&copy; 2024 JABIR KAGONE. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/nav.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>

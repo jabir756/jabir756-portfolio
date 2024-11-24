@@ -1,3 +1,4 @@
+/* Main */
 main {
     flex: 1;
 }
@@ -5,7 +6,7 @@ main {
 /* about and skills */
 
 .about-ctn,
-.skills-ctn{
+.skills-ctn {
     text-align: center;
     padding: 40px 10px;
     max-width: 600px;
@@ -41,19 +42,20 @@ main {
     background-color: rgb(222, 96, 117);
     color: #ffffff;
 }
+
 /*Certificates*/
-.certificates h2{
+.certificates h2 {
     text-align: center;
 }
 
-.certificates-ctn{
+.certificates-ctn {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 40px 0px;
     gap: 10px;
 }
 
-.certificates-ctn img{
+.certificates-ctn img {
     width: 100%;
     object-fit: cover;
     user-select: none;
@@ -90,7 +92,7 @@ main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card img{
+.card img {
     width: 100%;
     object-fit: cover;
 }

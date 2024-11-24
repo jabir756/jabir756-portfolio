@@ -11,16 +11,16 @@ header {
     background-size: cover;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
-    background-color: #ffffff;    
+    background-color: #ffffff;
 }
 
-.cv{
+.cv {
     font-size: 1rem;
     text-decoration: none;
     color: #ffffff;
@@ -31,11 +31,11 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-.cv:hover{
+.cv:hover {
     transform: scale(1.05);
 }
 
-.nav button{
+.nav button {
     cursor: pointer;
     border: none;
     padding: 5px 10px;
@@ -44,7 +44,7 @@ header {
     background-color: transparent;
 }
 
-.content{
+.content {
     position: absolute;
     top: 55px;
     right: 0px;
@@ -54,7 +54,6 @@ header {
     padding: 20px;
     display: none;
     flex-direction: column;
-    z-index: 1;
     background-color: #ffffff;
 }
 
@@ -79,8 +78,8 @@ header {
 }
 
 .introduce h1,
-.introduce p{
-    font-family:'Courgette', 'Dancing Script';
+.introduce p {
+    font-family: 'Courgette';
 }
 
 .introduce a {
