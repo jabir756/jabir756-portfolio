@@ -1,9 +1,5 @@
 main {
     flex: 1;
-    background-image: url('../header-bg.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* about and skills */
@@ -43,8 +39,14 @@ main {
     border-radius: 25px;
     text-transform: uppercase;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(222, 96, 117);
+    color: #ffffff;
 }
 /*Certificates*/
+.certificates h2{
+    text-align: center;
+}
+
 .certificates-ctn{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -85,6 +87,13 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .card p {
@@ -97,7 +106,6 @@ main {
     background-color: rgb(18, 169, 18);
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* contact */
@@ -122,7 +130,7 @@ main {
 
 .contact div a{
     text-decoration: none;
-    background-color: rgb(222, 96, 117);
+    background-color: rgba(0, 0, 255, 0.773);
     padding: 5px 10px;
     border-radius: 5px;
     color: #ffffff;

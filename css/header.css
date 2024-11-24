@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script:wght@400..700&family=Prata&display=swap');
+
 header {
     display: flex;
     flex-direction: column;
@@ -15,8 +17,7 @@ header {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
-    background-color: #ffffff;
-    
+    background-color: #ffffff;    
 }
 
 .cv{
@@ -77,7 +78,13 @@ header {
     align-items: center;
 }
 
+.introduce h1,
+.introduce p{
+    font-family:'Courgette', 'Dancing Script';
+}
+
 .introduce a {
+    font-family: 'Prata';
     text-decoration: none;
     background-color: rgba(0, 0, 255, 0.773);
     padding: 5px 10px;
