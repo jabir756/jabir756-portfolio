@@ -19,7 +19,6 @@ body {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    background-color: white;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     overflow-x: hidden;

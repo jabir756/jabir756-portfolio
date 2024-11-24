@@ -35,9 +35,8 @@ main {
 }
 
 .skills-ctn ul li {
-    padding: 5px 10px;
+    padding: 5px;
     border-radius: 25px;
-    text-transform: uppercase;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     background-color: rgb(222, 96, 117);
     color: #ffffff;
@@ -106,37 +105,4 @@ main {
     background-color: rgb(18, 169, 18);
     color: white;
     text-decoration: none;
-}
-
-/* contact */
-.contact{
-    text-align: center;
-    padding: 40px 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact h2{
-    margin-bottom: 20px;
-}
-
-.contact div{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.contact div a{
-    text-decoration: none;
-    background-color: rgba(0, 0, 255, 0.773);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #ffffff;
-    transition: transform 0.5s ease-in-out;
-}
-
-.contact div a:hover{
-    transform: scale(1.06);
 }
