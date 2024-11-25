@@ -5,10 +5,6 @@ header {
     flex-direction: column;
     height: 100vh;
     position: relative;
-    background-image: url('../bg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .nav {
@@ -17,10 +13,9 @@ header {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
-    background-color: #ffffff;
 }
 
-.cv {
+.cv{
     font-size: 1rem;
     text-decoration: none;
     color: #ffffff;
@@ -35,7 +30,7 @@ header {
     transform: scale(1.05);
 }
 
-.nav button {
+#menu-btn {
     cursor: pointer;
     border: none;
     padding: 5px 10px;
@@ -54,7 +49,6 @@ header {
     padding: 20px;
     display: none;
     flex-direction: column;
-    background-color: #ffffff;
 }
 
 .content a {
@@ -89,8 +83,8 @@ header {
     padding: 5px 10px;
     margin: 20px 0px;
     border-radius: 5px;
-    color: #ffffff;
     width: max-content;
+    color: #ffffff;
     transition: transform 0.3s ease-in-out;
 }
 
