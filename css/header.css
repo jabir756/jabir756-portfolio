@@ -71,7 +71,7 @@ header {
     align-items: center;
 }
 
-.introduce h1,
+.introduce h2,
 .introduce p {
     font-family: 'Courgette';
 }

@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.projects h2 {
+.projects h3 {
     margin-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: #ffffffaf;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 300px;
 }
@@ -33,14 +33,19 @@
     object-fit: cover;
 }
 
+.card h3{
+    padding: 10px;
+}
+
 .card p {
     flex: 1;
+    padding: 5px;
 }
 
 .card a {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(18, 169, 18);
+    background-color: rgba(18, 169, 18, 0.623);
     color: white;
     text-decoration: none;
 }

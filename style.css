@@ -20,9 +20,14 @@ body{
     scroll-behavior: smooth;
     scrollbar-width: thin;
     overflow-x: hidden;
-    background-color: wheat;
+    background-color: rgba(245, 222, 179, 0.556);
 }
 
 .no-scroll {
     overflow: hidden;
+}
+
+/* Main */
+main {
+    flex: 1;
 }
