@@ -1,0 +1,14 @@
+/*Certificates*/
+.certificates h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certif-card img {
+    width: 300px;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
+}
