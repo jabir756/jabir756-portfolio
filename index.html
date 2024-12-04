@@ -6,80 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of JABIR KAGONE, a passionate programmer skilled in JABIR KAGONE.">
     <title>JABIR KAGONE PORTFOLIO</title>    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/about-skills.css">
-    <link rel="stylesheet" href="css/certificates.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script>
-        const images = document.querySelectorAll('img');
-        images.forEach((image) => { image.setAttribute('loading = loading="lazy"') })
-    </script>
-    <script src="js/nav.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!-- Header --->
     <header>
         <!-- Navigation -->
-        <div data-aos="fade-down" data-aos-duration="1200" class="nav">
-            <div class="content">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+        <div class="nav">            
+            <a class="cv" href="jabir_kagone_CV.pdf" target="_blank">Resume</a>
+            <div class="options">
+                <button id="menu-btn">&#8801;</button>
+                <div class="content">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="mailto:jabirkagone6@gmail.com" target="_blank">Contact</a>
+                </div>
             </div>
-            <a class="cv" href="jabir_kagone_CV.pdf" target="_blank">CV</a>
-            <button id="menu-btn">&#9776;</button>
         </div>
 
-        <div data-aos="zoom-in" data-aos-duration="1200" class="introduce">
-            <h2>Hi, I'm JABIR KAGONE</h2>
-            <p>A Passionate Developer</p>
-            <a href="#projects">See My Work</a>
+        <div class="introduce-wrap">
+            <div class="introduce">
+                <h2>Hi, I'm JABIR KAGONE</h2>
+                <p>A Passionate Developer</p>
+                <a href="#projects">See My Work</a>
+            </div>
         </div>
     </header>
 
     <!-- Main -->
     <main>
-
-        <div data-aos="fade-up" data-aos-duration="1200" class="about-ctn" id="about">
-            <h3>About Me</h3>
+        <div class="about-ctn" id="about">
             <p>Hello! I'm JABIR KAGONE, a full-stack developer. I enjoy
                 building everything from small business sites to
                 rich interactive web apps. I'm always looking to learn and grow.</p>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="600" class="skills-ctn">
-            <h3>Skills</h3>
+        <div class="skills-ctn">
             <ul>
-                <li data-aos="fade-up" data-aos-duration="700">JavaScript</li>
-                <li data-aos="fade-up" data-aos-duration="800">Python</li>
-                <li data-aos="fade-up" data-aos-duration="900">TypeScript</li>                
-                <li data-aos="fade-up" data-aos-duration="1000">C#</li>
-                <li data-aos="fade-up" data-aos-duration="1100">SQL</li>
-                <li data-aos="fade-up" data-aos-duration="1200">SQLite</li>
-                <li data-aos="fade-up" data-aos-duration="1300">Microsoft SQL Server</li>
-                <li data-aos="fade-up" data-aos-duration="1400">NoSQL</li>
-                <li data-aos="fade-up" data-aos-duration="1500">MongoDB</li>
-                <li data-aos="fade-up" data-aos-duration="1600">Node.js</li>
-                <li data-aos="fade-up" data-aos-duration="1700">Git & GitHub</li>
-                <li data-aos="fade-up" data-aos-duration="1800">HTML</li>
-                <li data-aos="fade-up" data-aos-duration="1900">CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>TypeScript</li>                
+                <li>C#</li>
+                <li>SQL</li>
+                <li>SQLite</li>
+                <li>Microsoft SQL Server</li>
+                <li>NoSQL</li>
+                <li>MongoDB</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>HTML</li>
+                <li>CSS</li>
             </ul>
         </div>
 
         <!-- Projects -->
-        <div data-aos="fade-up" data-aos-duration="1200" class="projects" id="projects">
-            <h3>My Projects</h3>
-
+        <div class="projects" id="projects">
             <!--Cards container-->
             <div class="cards">
 
                 <!--Pokedex web-->
-                <div data-aos="zoom-in" data-aos-duration="1600" class="card">
+                <div class="card">
                     <img src="projects-img/pokedex.webp" alt="">
                     <h3>Pokedex web</h3>
                     <p>Pokemons cards with images and descriptions.</p>
@@ -89,8 +77,7 @@
                 </div>
 
                 <!-- password-generator -->
-
-                <div data-aos="zoom-in" data-aos-duration="1600" class="card">
+                <div class="card">
                     <img src="projects-img/password-generator.webp" alt="">
                     <h3>Password generator</h3>
                     <p>Generate password.</p>
@@ -100,8 +87,7 @@
                 </div>
 
                 <!-- portfolio -->
-
-                <div data-aos="zoom-in" data-aos-duration="1600" class="card">
+                <div class="card">
                     <img src="projects-img/galery-react-native.png" alt="">
                     <h3>Galery App</h3>
                     <p>React native galerie app</p>
@@ -111,8 +97,7 @@
                 </div>
 
                 <!-- Galery in react native -->
-
-                <div data-aos="zoom-in" data-aos-duration="1600" class="card">
+                <div class="card">
                     <img src="projects-img/portfolio.webp" alt="">
                     <h3>My portfolio</h3>
                     <p>My portfolio web site where you are actualy</p>
@@ -121,34 +106,6 @@
                     </a>
                 </div>
 
-            </div>
-        </div>
-
-        <!--Udemy certification-->
-        <div data-aos="fade-up" data-aos-duration="1200" class="certificates">
-            <h3>My Online Courses</h3>
-            <div class="cards">
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/chatgpt & ia udemy.jpg" alt="ChatGPT & AI Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/css udemy.jpg" alt="CSS Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/figma.jpg" alt="Figma Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/git github udemy.jpg" alt="Git & GitHub Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/html udemy.jpg" alt="HTML Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/javascript udemy.jpg" alt="JavaScript Udemy">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1600" class="certif-card">
-                    <img src="Udemy/typescript.jpg" alt="TypeScript Udemy">
-                </div>
             </div>
         </div>
 
@@ -161,7 +118,7 @@
             <h3>Contact Me</h3>
             <p>If you have any questions or would like to work with
                 me, feel free to contact me below:</p>
-            <div>
+            <div class="links">
                 <a href="mailto:jabirkagone6@gmail.com"
                    target="_blank">
                     Contact
@@ -174,10 +131,6 @@
         </div>
         <p class="copy-right">&copy; 2024 JABIR KAGONE. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
