@@ -1,0 +1,151 @@
+:root {
+    /* Modern Color Palette */
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #2c3e50;
+    --text-color: #2c3e50;
+    --accent-color: #e74c3c;
+    
+    /* Smooth Transitions */
+    --transition-speed: 0.3s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    transition: all var(--transition-speed) ease;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.nav .content {
+    display: flex;
+    align-items: center;
+}
+
+.nav .content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav .content a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: width var(--transition-speed) ease;
+}
+
+.nav .content a:hover::after {
+    width: 100%;
+}
+
+.cv {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform var(--transition-speed) ease;
+    margin-right: 1rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.cv:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.01);
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Introduce Section */
+.introduce-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.introduce h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.introduce a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.introduce a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.01);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main{
+        padding: 0.5rem;
+    }
+    .nav .content {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--primary-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease;
+        z-index: 1;
+    }
+
+    .nav .content.active {
+        left: 0;
+    }
+
+    .nav .content a {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    #menu-btn {
+        display: block;
+        z-index: 2;
+    }
+
+    .cv {
+        position: relative;
+        z-index: 1;
+    }
+
+    .introduce h2 {
+        font-size: 2rem;
+    }
+}
