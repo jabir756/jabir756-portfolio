@@ -74,7 +74,7 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1;
 }
 
 /* Introduce Section */
@@ -103,7 +103,7 @@
 }
 
 .introduce a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     transform: scale(1.01);
 }
 

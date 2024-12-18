@@ -25,12 +25,11 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-color);
     color: white;
     padding: 2rem;
     text-align: center;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 /* Footer */

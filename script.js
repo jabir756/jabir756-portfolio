@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toggle menu button text
         if (menuContent.classList.contains('active')) {
             menuBtn.innerHTML = '&times;';
+            document.body.style.overflow = 'hidden';
         } else {
             menuBtn.innerHTML = '&#8801;';
+            document.body.style.overflow = 'auto';
         }
     });
 
